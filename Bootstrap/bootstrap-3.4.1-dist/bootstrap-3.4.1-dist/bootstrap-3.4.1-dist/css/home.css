@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.logo img{
+  text-align:center;
+  display:block;
+  width:140px;
+  height:140px;
+  margin:auto;
+}
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 180px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  font-size: 15px;
+  color: white;
+  padding-left: 40px;
+ /* box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);*/
+  transition: .4s;
+  margin:2px;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background:url(arthi.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+.banner{
+    text-align:center;
+    padding-top:350px;
+    
+}
+.name{
+   font-size: 36px;
+    font-weight: bold;
+    color: white;
+    font-family:sans-serif;
+
+}
+
+.social{
+  position:absolute;
+   top:0;
+   right:0;
+    margin:0 auto;
+    width:100px;
+    line-height:40px;
+
+  }
+
+  .fa-facebook-f{
+    color:white;
+    border:2px solid white ;
+    border-radius:40px;
+     margin: 4px 2px;
+    
+     padding:20px;
+
+  }
+  .fa-twitter{
+    color:white;
+    border:2px solid white ;
+    border-radius:40px;
+     margin: 4px 2px;
+    
+     padding:20px;
+  }
+  .fa-instagram{
+    color:white;
+    border:2px solid white ;
+    border-radius:40px;
+     margin: 1px 1px;
+    
+     padding:20px;
+  }
+.fa-linkedin{
+  color:white;
+  border:2px solid white ;
+    border-radius:40px;
+     margin: 4px 2px;
+    
+     padding:20px;
+}
+.startup{
+font-size:30px;
+font-family:Calibri;
+  color:#FF69B4;
+}
+.designer{
+  font-size:30px;
+  font-family:Calibri;
+  color:#FF69B4;
+}
+.photo{
+  font-size:30px;
+  font-family:Calibri;
+  color:#FF69B4;
+}
+.iam{
+  font-size:30px;
+  font-family:Calibri;
+  color:white;
+}
+.pt-home{
+	background:url(arthi.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+  }
+
+
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Arthi DS - Personal Portfolio</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="C:\Bootstrap\bootstrap-3.4.1-dist\bootstrap-3.4.1-dist\css\style1.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+  <style>
+  .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #042331;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+  
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}  
+  
+ .col-lg-3 {
+ display:inline;
+ margin:auto;
+ }
+ 
+ .col-lg-12{
+ display:inline;
+ margin:auto;
+ 
+ }
+ 
+ 
+  
+  
+  </style>
+</head>
+
+
+
+
+
+<body bgcolor="#3c3c3c">
+
+	<script>
+var header = document.getElementById("sidebar");
+var btns = header.getElementsByClassName("sidebar");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+					
+						
+
+						
+						<div class="sidebar">
+						<header>My App</header>
+    <div class="logo">
+    <img src="C:\Bootstrap\bootstrap-3.4.1-dist\bootstrap-3.4.1-dist\logo.png"/></div>
+  <a href="index.html"><i class="icon-h fas fa-house-damage"></i>Home</a>
+  <a href="newabout.html"><i class="icon-a fas fa-user-tie"></i>About</a>
+  <a href="newresume.html"><i class="icon-r fas fa-address-book"></i>Resume</a>
+  <a href="newportfolio.html"><i class="icon-p fas fa-briefcase"></i>Portfolio</a>
+  <a href="newcontact.html"><i class="icon-c fas fa-envelope"></i>Contact</a>
+  
+  
+  
+</div>
+
+
+<div class="custom-wrapper" style="width:100%;background:#3c3c3c">
+<nav class="page-pt-contact" style="background:#3c3c3c" data-simplebar>
+
+
+<section class="container" style="background:black;overflow:hidden;max-width:800px;max-height:900px;">
+<div class="page pt-contact" data-simplebar>
+
+
+<h3 style="text-align:center;color:white">Contact</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="row mt-100">-->
+ <div class="col-lg-8 col-lg-offset-2;max-height:600px;padding-top:500px;">
+ <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6" style="padding-top:50px;">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="padding-top:50px;">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6" style="padding-top:50px; ">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 " style="padding-top:50px;">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="padding-top:50px;">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="padding-bottom:50px;padding-top:50px">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+                          
+                        </div>
+
+                    </form>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</section>
+</body>
+</html>
